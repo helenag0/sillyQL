@@ -1,0 +1,27 @@
+# Test file 3
+INSERT INTO firsttable 15 ROWS
+REMOVE mytable
+PRINT FROM mytable 2 city state ALL
+CREATE data 3 string int bool name age truth
+INSERT INTO data 10 ROWS
+max 15 true
+sally 7 false
+becca 2 true
+helena 3 false
+ella 284 false
+daniel 35 false
+elsie 2 true
+lexie 24 false
+colin 3 false
+roland 922 true
+GENERATE FOR data bst INDEX ON age
+PRINT FROM data 2 name truth WHERE age > 10
+INSERT INTO data 5 ROWS
+felip 1 false
+sasha 35 false
+sage 135 true
+diana 32 true
+huckle 6 true
+PRINT FROM data 2 name truth WHERE age < 8
+PRINT FROM data 2 name truth WHERE age = 3
+QUIT

@@ -1,0 +1,36 @@
+# Test file 1
+CREATE mytable 10 string bool double int string string string double int int
+word truth firstnum secondnum secondword thirdword fourthword blah thirdnum fourthnum
+INSERT INTO mytable 7 ROWS
+hello true 34.04 1 you hospital tank 39.01 3 78
+my true 200.38 2 am animal farm 2.92 6 30
+name false 200.38 3 excellent exo skeleton 6.83 5 36
+is true 200.38 4 student michigan book 29.54 5 36
+helena true 34.54 5 candle duck washrag 29.54 5 36
+madeline true 2.65 6 blind bat pants 29.54 5 36
+grobel false 2.54 7 pajama tea nightmare 3.65 10 4
+INSERT INTO mytable 8 ROWS
+hello true 34.04 1 you hospital tank 39.01 3 78
+my true 200.38 2 am animal farm 2.92 6 30
+name false 200.38 3 excellent exo skeleton 6.83 5 36
+is true 200.38 4 student michigan book 29.54 5 36
+helena true 34.54 5 candle duck washrag 29.54 5 36
+madeline true 2.65 6 blind bat pants 29.54 5 36
+grobel false 2.54 7 pajama tea nightmare 3.65 10 4
+name false 200.38 3 excellent exo skeleton 6.83 5 36
+PRINT FROM mytable 3 fourthword truth thirdword ALL
+GENERATE FOR mytable hash INDEX ON secondword
+PRINT FROM mytable 4 firstword secondword fourthnum truth WHERE truth = true
+GENERATE FOR mytable bst INDEX ON fourthword
+PRINT FROM mytable 4 fourthword thirdword secondword firstnum WHERE truth = false
+GENERATE FOR mytable bst INDEX ON firstnum
+DELETE FROM mytable WHERE firstnum > 40.00
+PRINT FROM mytable 3 word truth thirdword WHERE firstnum < 3.00
+GENERATE FOR mytable hash INDEX ON secondnum
+DELETE FROM mytable WHERE secondnum > 28
+PRINT FROM mytable 5 word truth secondword blah thirdword WHERE secondnum > 2
+PRINT FROM mytable 3 fourthword secondnum thirdnum ALL
+QUIT
+
+
+

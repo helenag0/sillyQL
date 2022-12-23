@@ -1,0 +1,122 @@
+# Test file 4
+CREATE classroom 5 string int bool double double name length question age num
+INSERT INTO classroom 20 ROWS
+Kendall 2 false 2 234
+Gael 2 false 3 325
+Blakely 3 false 0.1 234
+Braeden 2 true 0.12 234
+Reece 2 true 0.3 234
+Sheridan 2 false 1 52
+Roberto 4 false 1 432
+Grahm 3 false 4 234
+Maxine 3 true 4 234
+Leo 2 true 3 902
+Elroy 2 true 1 235
+Clayton 2 false 0.1 548
+Edward 2 true 0.2 324
+Keegan 2 false 2 485
+Robin 3 true 1 495
+Tyler 2 false 1 203
+Claude 2 false 2 607
+Ally 2 false 3 459
+Miffy 3 false 0.1 906
+Christine 2 true 0.12 103
+PRINT FROM classroom 2 name num WHERE age = 1
+PRINT FROM classroom 2 name num WHERE age < 1
+PRINT FROM classroom 2 name num WHERE age > 1
+DELETE FROM classroom WHERE age = 1
+DELETE FROM classroom WHERE age > 1
+DELETE FROM classroom WHERE age < 1
+GENERATE FOR classroom bst INDEX ON age
+INSERT INTO classroom 20 ROWS
+Kendall 2 false 2 234
+Gael 2 false 3 325
+Blakely 3 false 0.1 234
+Braeden 2 true 0.12 234
+Reece 2 true 0.3 234
+Sheridan 2 false 1 52
+Roberto 4 false 1 432
+Grahm 3 false 4 234
+Maxine 3 true 4 234
+Leo 2 true 3 902
+Elroy 2 true 1 235
+Clayton 2 false 0.1 548
+Edward 2 true 0.2 324
+Keegan 2 false 2 234
+Robin 3 true 1 495
+Tyler 2 false 1 203
+Claude 2 false 2 234
+Ally 2 false 3 459
+Miffy 3 false 0.1 234
+Christine 2 true 0.12 103
+PRINT FROM classroom 2 name num WHERE age = 1
+PRINT FROM classroom 2 name num WHERE age < 1
+PRINT FROM classroom 2 name num WHERE age > 1
+DELETE FROM classroom WHERE age = 1
+DELETE FROM classroom WHERE age > 1
+DELETE FROM classroom WHERE age < 1
+GENERATE FOR classroom hash INDEX ON age
+INSERT INTO classroom 20 ROWS
+Kendall 2 false 2 234
+Gael 2 true 3 123
+Blakely 3 true 0.1 123
+Braeden 2 true 0.12 234
+Reece 2 true 0.3 523
+Sheridan 2 false 1 234
+Roberto 4 false 1 654
+Grahm 3 false 4 234
+Maxine 3 true 4 234
+Leo 2 true 3 643
+Elroy 2 false 1 235
+Clayton 2 false 0.1 234
+Edward 2 true 0.2 324
+Keegan 2 false 2 254
+Robin 3 true 1 134
+Tyler 2 false 1 1235
+Claude 2 true 2 234
+Ally 2 true 3 568
+Miffy 3 true 0.1 144
+Christine 2 true 0.12 234
+PRINT FROM classroom 2 name num WHERE age = 1
+PRINT FROM classroom 2 name num WHERE age < 1
+PRINT FROM classroom 2 name num WHERE age > 1
+PRINT FROM mytable 2 name num WHERE age = 1
+PRINT FROM mytable 2 name num WHERE age < 1
+PRINT FROM mytable 2 name num WHERE age > 1
+DELETE FROM classroom WHERE age = 1
+DELETE FROM classroom WHERE age > 1
+DELETE FROM classroom WHERE age < 1
+DELETE FROM mytable WHERE age < 1
+DELETE FROM mytable WHERE age > 1
+DELETE FROM mytable WHERE age = 1
+INSERT INTO classroom 20 ROWS
+Kendall 2 false 2 234
+Gael 2 true 3 325
+Blakely 3 true 0.1 234
+Braeden 2 true 0.12 234
+Reece 2 true 0.3 23
+Sheridan 2 false 1 678
+Roberto 4 true 1 586
+Grahm 3 false 4 23
+Maxine 3 true 4 234
+Leo 2 true 3 5687
+Elroy 2 false 1 890
+Clayton 2 false 0.1 78
+Edward 2 true 0.2 785
+Keegan 2 false 2 456
+Robin 3 true 1 35
+Tyler 2 true 1 203
+Claude 2 false 2 234
+Ally 2 false 3 4519
+Miffy 3 false 0.1 534
+Christine 2 false 0.12 253
+CREATE business 5 string int bool double double name length question age num
+INSERT INTO business 6 ROWS
+Robin 3 true 1 234
+Tyler 2 false 1 423
+Claude 2 true 2 234
+Ally 2 false 3 73
+Miffy 3 false 0.1 234
+Christine 2 false 0.12 346
+JOIN business AND classroom WHERE num = num AND PRINT 4 age 2 question 1 num 1 name 2
+QUIT

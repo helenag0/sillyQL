@@ -1,0 +1,26 @@
+# Test file 5
+CREATE mytable 4 string int bool double identification year screen num
+PRINT FROM mytable 2 identification year WHERE num = 1
+PRINT FROM mytable 2 identification year WHERE num < 1
+PRINT FROM mytable 2 identification year WHERE num > 1
+DELETE FROM mytable WHERE num = 1
+DELETE FROM mytable WHERE num > 1
+DELETE FROM mytable WHERE num < 1
+GENERATE FOR mytable bst INDEX ON num
+PRINT FROM mytable 2 identification year WHERE num = 1
+PRINT FROM mytable 2 identification year WHERE num < 1
+PRINT FROM mytable 2 identification year WHERE num > 1
+DELETE FROM mytable WHERE num = 1
+DELETE FROM mytable WHERE num > 1
+DELETE FROM mytable WHERE num < 1
+GENERATE FOR mytable hash INDEX ON num
+PRINT FROM mytable 2 identification year WHERE num = 1
+PRINT FROM mytable 2 identification year WHERE num < 1
+PRINT FROM mytable 2 identification year WHERE num > 1
+DELETE FROM mytable WHERE num = 1
+DELETE FROM mytable WHERE num > 1
+DELETE FROM mytable WHERE num < 1
+JOIN mytable AND mytable WHERE identification = identification AND PRINT 4 num 2 screen 1 identification 1 identification 2
+CREATE yourtable 4 string int bool double identification year screen num
+JOIN mytable AND yourtable WHERE identification = identification AND PRINT 4 num 2 screen 1 year 1 identification 2
+QUIT

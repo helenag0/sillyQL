@@ -1,0 +1,41 @@
+# Test file 2
+CREATE firsttable 3 string bool int name truth age
+CREATE secondtable 3 string bool int town rate number
+INSERT INTO firsttable 15 ROWS
+prince true 23
+indirect true 45
+isolation false 23
+banquet false 3
+hostility true 5
+exact false 6
+level false 9
+captivate false 9
+longt true 10
+sword true 300
+dead true 34
+multimedia true 23
+nerve false 2
+safari true 28
+longy false 234
+INSERT INTO secondtable 15 ROWS
+comedy false 3
+late true 203
+interactive true 23
+memorandum false 3
+fax true 2
+file false 23
+girl true 3
+consensus false 8
+contribution true 23
+dimension false 6
+bus false 45
+determine false 23
+offend false 34
+broccoli true 234
+convert false 4
+GENERATE FOR firsttable bst INDEX ON age
+GENERATE FOR secondtable bst INDEX ON number
+JOIN firsttable AND secondtable WHERE age = number AND PRINT 3 name 1 town 2 age 1
+JOIN firsttable AND secondtable WHERE truth = rate AND PRINT 3 name 1 town 2 age 1
+QUIT
+
